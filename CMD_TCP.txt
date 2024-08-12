@@ -1,0 +1,15 @@
+# comando en cmd para buscar los registros de un puerto en este caso 8000
+netstat -ano | findstr :8000 
+
+# una vez encontrada el PID (numero a la lado de listening)
+#  TCP    127.0.0.1:8000         0.0.0.0:0              LISTENING       32724
+
+taskkill /PID 32724 /F
+
+#listo hilo o puerto reiniciados
+
+
+# posibles soluciones
+- terminar procesos python
+# forzar hard reset navegador
+- Hice un hard refresh - cmd (o ctrl) +shift+r - en mi navegador y pareció cerrar la conexión.

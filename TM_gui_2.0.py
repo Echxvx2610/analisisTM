@@ -1,0 +1,428 @@
+import PySimpleGUI as sg
+from datetime import datetime
+import datetime as dt
+import pyautogui
+import time
+import pandas as pd
+import csv
+import threading
+from grafico_TM import run_dash_app
+import webbrowser
+import re
+
+#***************************************** FUNCIONES *********************************************
+
+#..............Funcion para buscar el valor de una clave en un diccionario................
+def buscar_key_por_valor(diccionario, valor):
+    for key, val in diccionario.items():
+        if val == valor:
+            return key
+    return None
+
+# ............  Función para convertir hora de formato 24 horas a AM/PM .............................
+def convertir_a_am_pm(hora_24):
+    try:
+        hora_obj = datetime.strptime(hora_24, '%H:%M')
+        if hora_obj.hour >= 12:
+            hora_am_pm = hora_obj.strftime('%I:%M %p')
+        else:
+            hora_am_pm = hora_obj.strftime('%I:%M %p').lstrip('0').replace(' 0', ' ')
+        return hora_am_pm
+    except ValueError:
+        # Manejar el caso de error de formato aquí
+        message = f"Warning: No se pudo convertir la hora '{hora_24}' a formato de hora válido. Se mantendrá sin cambios."
+        title = "Error"
+        sg.popup(title, message)
+        #print(f"Warning: No se pudo convertir '{hora_24}' a formato de hora válido. Se mantendrá sin cambios.")
+        return None  # Devolver None en caso de error
+
+def lanzar_navegador():
+    webbrowser.open('http://127.0.0.1:8000/')
+
+def main():
+    # tema de la GUI
+    sg.theme('Reddit') 
+    # Evento de parada para los hilos
+    stop_event = threading.Event()  
+    # fecha actual
+    hoy = dt.date.today() 
+    # Generamos opciones para las horas del día
+    horas_del_dia = [f'{hora:02d}:00' for hora in range(1,13)]
+
+    # Definimos las opciones de causas para cada categoría
+    categorias_primer_orden = {
+        'INGENIERIA': ['MANTENIMIENTO CORRECTIVO', 'MANTENIMIENTO PREVENTIVO', 'ESPERANDO TÉCNICO', 'PROTOS O VALIDACIÓN DE INGENIERIA', 'ESPERANDO PROGRAMA', 'PROBLEMAS DE PROCESO', 'EQUIPO DE PRUEBA ELÉCTRICA', 'REABASTO POR MATERIAL INSUFICIENTE (USI)'],
+        'MATERIALES' : ['ESPERANDO SURTIDO (ALMACÉN)', 'ESPERANDO SURTIDO (CARRUSEL)', 'CONTEO CÍCLICO (NO PROGRAMADO)'],
+        'PRODUCCION' : ['FALTA DE MATERIAL', 'ARRANQUE DE TURNO', 'CIERRE DE TURNO', 'CAMBIO DE MODELO', 'SIN PROGRAMA DE PRODUCCION', 'RECURSOS DE PERSONAL', 'ESPERANDO TARJETA', 'ERROR DE OPERACION', 'REEMPLAZO DE ROLLOS','ESPERANDO SURTIDO (SETUP ROOM)'],
+        'CALIDAD' : ['RECHAZO POR DEFECTO DE CALIDAD', 'ESPERANDO SURTIDO (CALIDAD)'],
+        'CONTROL DE PRODUCCION' : ['PAROS NO PLANEADOS'],
+        'MANTENIMIENTO' : ['FALLA DE SERVICIOS (LUZ, AGUA, EXTRACCION, AIRE)', 'SEGURIDAD',],
+        'SISTEMAS' : ['FALLA DE SISTEMAS', 'EQUIPO INFORMÁTICO FALLANDO'],
+        'OTROS' : ['PAROS NO PLANEADOS']
+    }
+    # Definimos las causas para cada subcategoría
+    causas_por_subcategoria = {
+        'MANTENIMIENTO CORRECTIVO': ['REEMPLAZO DE PARTES DAÑADAS', 'ESPERANDO PARTES DE REEMPLAZO'],
+        'MANTENIMIENTO PREVENTIVO': ['TPM', 'ESPERANDO PARTES DE REEMPLAZO'],
+        'ESPERANDO TÉCNICO': ['ATENDIENDO SOPORTE', 'VALIDACIÓN / VERIFICACIÓN DE AJUSTES', 'AJUSTANDO Y ENVIANDO PROGRAMA'],
+        'PROTOS O VALIDACIÓN DE INGENIERIA': ['DEPURANDO NUEVO PROCESO'],
+        'ESPERANDO PROGRAMA': ['CAMBIO DE LÍNEA', 'PROGRAMA NO DISPONIBLE'],
+        'PROBLEMAS DE PROCESO': ['MAQUINA LENTA', 'ROUTING INCORRECTO / NO ACTUALIZADO', 'RECUPERANDO COMPONENTES'],
+        'EQUIPO DE PRUEBA ELÉCTRICA': ['FALLA ELÉCTRICA DEL PROBADOR', 'DEPURANDO EQUIPO o PROGRAMA', 'FALLA MECÁNICA DEL PROBADOR'],
+        'REABASTO POR MATERIAL INSUFICIENTE (USI)': ['SOLICITUD Y MONTADO DE MATERIAL PRODUCCION', 'SURTIDO DE ALMACÉN', 'AUDITORÍA Y LIBERACIÓN CALIDAD'],
+        'ESPERANDO SURTIDO (ALMACÉN)': ['MATERIAL EQUIVOCADO (CARRUSEL)', 'ESPERANDO MATERIAL DE AVNET', 'DISCREPANCIA DE MATERIAL'],
+        'ESPERANDO SURTIDO (CARRUSEL)': ['KIT NO A TIEMPO POR CAPACIDAD DE KITEO', 'PERSONAL INSUFICIENTE', 'ROLLO EXTRAVIADO (MATERIALES)', 'MATERIAL EQUIVOCADO'],
+        'CONTEO CÍCLICO (NO PROGRAMADO)': ['CONTANDO MATERIAL MONTADO EN MAQUINA'],
+        'FALTA DE MATERIAL': ['DISCREPANCIA o MAL BALANCE'], 
+        'ARRANQUE DE TURNO': ['TRASLAPE DE TURNO', 'JUNTA INICIAL', 'EJERCICIOS DE ESTIRAMIENTO'],
+        'CIERRE DE TURNO': ['DESPEJE DE LINEA (CIERRE DE TURNO)'],
+        'CAMBIO DE MODELO' : ['FALLA DE EQUIPOS', 'BOM COMPLEJO / GRANDE', 'MATERIAL PERDIDO / KIT INCOMPLETO'],
+        'SIN PROGRAMA DE PRODUCCION': ['NO PLAN'],
+        'RECURSOS DE PERSONAL': ['BALANCEO DE LINEAS', 'ENTRENAMIENTOS', 'PERSONAL INSUFICIENTE', 'PERSONAL CUBRIENDO LINEA'],
+        'ESPERANDO TARJETA': ['MAQUINA PREVIA LENTA/CAIDA', 'MAQUINA SIGUIENTE LENTA/CAIDA'],
+        'ERROR DE OPERACION': ['ROLLO MAL MONTADO EN FEEDER', 'ROLLO EXTRAVIADO (PRODUCCION)', 'FEEDER S / ESCANEAR', 'PCBs BLOQUEADOS INCORRECTAMENTE', 'SETUP DE MAQUINA INCORRECTO', 'RECUPERANDO COMPONENTE'],
+        'REEMPLAZO DE ROLLOS': ['CORTANDO ROLLO (S) POR INVENTARIO JUSTO', 'CAMBIOS DE ROLLOS EN MAQUINA', 'HACIENDO EMPATE'],
+        'ESPERANDO SURTIDO (SETUP ROOM)': ['KIT NO A TIEMPO POR CAPACIDAD DE MONTADO', 'CARROS DE MONTADO INSUFICIENTES', 'FEEDERS INSUFICIENTES'],
+        'RECHAZO POR DEFECTO DE CALIDAD': ['SORTEO E INSPECCION DE PRODUCTO', 'MATERIA PRIMA CON DEFECTO DE PROVEEDOR'],
+        'ESPERANDO SURTIDO (CALIDAD)': ['FALTA DE MATERIAL (DETENIDO QC INSPECCION)'],
+        'FALLA DE SERVICIOS (LUZ, AGUA, EXTRACCION, AIRE)': ['LUZ', 'AGUA', 'SISTEMA DE EXTRACCION', 'AIRE COMPRIMIDO', 'SUMINISTRO VAC (COMUN / UPS)'],
+        'SEGURIDAD': ['SIMULACROS', 'EVACUACION POR ALARMA', 'CONATOS'],
+        'FALLA DE SISTEMAS': ['SYTELINE CAIDO', 'SISTEMA DE CRs NO DISPONIBLE'],
+        'EQUIPO INFORMÁTICO FALLANDO': ['IMPRESORA NO DISPONIBLE', 'PC (s) TRABADA (s)', 'ACTUALIZACIONES AUTOMÁTICAS'],
+        'PAROS NO PLANEADOS' : ['CAMBIO DE PROGRAMA (PRIORIDADES)', 'ERROR EN PLAN DE PRODUCCION','CURSOS DE CAPACITACION','JUNTAS INFORMATIVAS', 'BLOQUEADOS PCBs con DEFECTO', 'REEMPALZO DE PAPEL EN DEK'],
+    }
+    # Causas y codigos
+    codigos_causas = {
+        'REEMPLAZO DE PARTES DAÑADAS': 'E1',
+        'ESPERANDO PARTES DE REEMPLAZO': 'E12',
+        'TPM': 'E2',
+        'ESPERANDO PARTES DE REEMPLAZO': 'E3',
+        'ATENDIENDO SOPORTE': 'E4',
+        'VALIDACIÓN / VERIFICACIÓN DE AJUSTES': 'E41',
+        'AJUSTANDO Y ENVIANDO PROGRAMA': 'E42',
+        'DEPURANDO NUEVO PROCESO': 'E5',
+        'CAMBIO DE LÍNEA': 'E6',
+        'PROGRAMA NO DISPONIBLE': 'E61',
+        'MAQUINA LENTA': 'E7',
+        'ROUTING INCORRECTO / NO ACTUALIZADO': 'E71',
+        'RECUPERANDO COMPONENTES': 'E72',
+        'FALLA ELÉCTRICA DEL PROBADOR': 'E8',
+        'DEPURANDO EQUIPO o PROGRAMA': 'E81',
+        'FALLA MECÁNICA DEL PROBADOR': 'E82',
+        'SOLICITUD Y MONTADO DE MATERIAL PRODUCCION': 'E83',
+        'SURTIDO DE ALMACÉN': 'E84',
+        'AUDITORÍA Y LIBERACIÓN CALIDAD': 'E85',
+        'MATERIAL EQUIVOCADO (CARRUSEL)': 'M1',
+        'ESPERANDO MATERIAL DE AVNET': 'M4',
+        'DISCREPANCIA DE MATERIAL': 'M5',
+        'KIT NO A TIEMPO POR CAPACIDAD DE KITEO': 'M6',
+        'PERSONAL INSUFICIENTE': 'M61',
+        'ROLLO EXTRAVIADO (MATERIALES)': 'M62',
+        'ROLLO EXTRAVIADO (PRODUCCION)': 'A12',
+        'CONTANDO MATERIAL MONTADO EN MAQUINA': 'A11',
+        'DISCREPANCIA o MAL BALANCE': 'A1',
+        'TRASLAPE DE TURNO': 'A2',
+        'JUNTA INICIAL': 'A6',
+        'EJERCICIOS DE ESTIRAMIENTO': 'A22',
+        'DESPEJE DE LINEA (CIERRE DE TURNO)': 'A23',
+        'FALLA DE EQUIPOS': 'A3',
+        'BOM COMPLEJO / GRANDE': 'A31',
+        'MATERIAL PERDIDO / KIT INCOMPLETO': 'A32',
+        'NO PLAN': 'A4',
+        'BALANCEO DE LINEAS': 'A5',
+        'ENTRENAMIENTOS': 'A51',
+        'PERSONAL INSUFICIENTE': 'A52',
+        'PERSONAL CUBRIENDO LINEA': 'A7',
+        'MAQUINA PREVIA LENTA/CAIDA': 'A8',
+        'MAQUINA SIGUIENTE LENTA/CAIDA': 'A14',
+        'ROLLO MAL MONTADO EN FEEDER': 'A9',
+        'FEEDER S / ESCANEAR': 'A92',
+        'PCBs BLOQUEADOS INCORRECTAMENTE': 'A93',
+        'SETUP DE MAQUINA INCORRECTO': 'A94',
+        'RECUPERANDO COMPONENTE': 'A95',
+        'CORTANDO ROLLO (S) POR INVENTARIO JUSTO': 'A10',
+        'CAMBIOS DE ROLLOS EN MAQUINA': 'A18',
+        'HACIENDO EMPATE': 'A17',
+        'KIT NO A TIEMPO POR CAPACIDAD DE MONTADO': 'A13',
+        'CARROS DE MONTADO INSUFICIENTES': 'A15',
+        'FEEDERS INSUFICIENTES': 'A16',
+        'SORTEO E INSPECCION DE PRODUCTO': 'Q1',
+        'MATERIA PRIMA CON DEFECTO DE PROVEEDOR': 'Q2',
+        'FALTA DE MATERIAL (DETENIDO QC INSPECCION)': 'Q3',
+        'CAMBIO DE PROGRAMA (PRIORIDADES)': 'C1',
+        'ERROR EN PLAN DE PRODUCCION': 'C2',
+        'LUZ': 'M3',
+        'AGUA': 'M31',
+        'SISTEMA DE EXTRACCION': 'M32',
+        'AIRE COMPRIMIDO': 'M33',
+        'SUMINISTRO VAC (COMUN / UPS)': 'M34',
+        'SIMULACROS': 'M2',
+        'EVACUACION POR ALARMA': 'M21',
+        'CONATOS': 'M22',
+        'SYTELINE CAIDO': 'S1',
+        'SISTEMA DE CRs NO DISPONIBLE': 'S2',
+        'IMPRESORA NO DISPONIBLE': 'S3',
+        'PC (s) TRABADA (s)': 'S4',
+        'ACTUALIZACIONES AUTOMATICAS': 'S5',
+        'CURSOS DE CAPACITACION': 'O1',
+        'JUNTAS INFORMATIVAS': 'O2',
+        'BLOQUEADOS PCBs con DEFECTO': 'O3',
+        'REEMPALZO DE PAPEL EN DEK': 'O4',
+    }
+
+    #lista  de causas
+    causas = list(codigos_causas.keys()) # agregar causas a tabla csv
+    #print(causas)
+    #lista de categorias
+    categorias = list(categorias_primer_orden.keys())
+    #print(categorias)
+    subcategorias = list(categorias_primer_orden.values())
+    #print(subcategorias)
+
+    #layout para la entrada de datos
+    layout_entrada_datos = [
+        [sg.Image(r'TM_OEE\img\LOGO_NAVICO_1_90-black.png',expand_x=False,expand_y=False,enable_events=True,key='-LOGO-'),sg.Push()],
+        [sg.Text('Fecha:'), sg.Input(hoy, key='FECHA', size=(10, 1), disabled=False,text_color='blue', background_color='white')],
+        [sg.Text("Ensamble", size=(10, 1)), sg.Input(key='ENSAMBLE', size=(12, 1)),sg.Text("Linea:"),sg.Combo(values = [1, 2, 3, 4, 5], key='LINEA', enable_events=True,size=(10, 1))],
+        [sg.Text('Hora Inicio', size=(10, 1)), sg.Combo(values=horas_del_dia, key='HORA INICIO', size=(10, 1),enable_events=True),sg.Text('Hora Final', size=(10, 1)), sg.Combo(values=horas_del_dia, key='HORA FINAL', size=(10, 1))],
+        [sg.Text('Categoria:'), sg.Combo(categorias, key='CATEGORIA', enable_events=True,size=(30, 5))],
+        [sg.Text('Subcategoria:'), sg.Combo([], key='SUBCATEGORIA', enable_events=True,size=(30, 5))],
+        [sg.Text('Causa:'), sg.Combo([], key='CAUSA', enable_events=True,size=(50, 5))],
+        [sg.Text('Código:'), sg.Input(key='CODIGO', size=(10, 1), disabled=True)],
+        [sg.Text('Tiempo en minutos:'), sg.Input(key='TIEMPO', size=(10, 1))],
+        [sg.Button('Añadir Causa'), sg.Button('Guardar Todo'), sg.Button('Cancelar')],
+    ]
+
+    #LAYOUT TABLA DE CODIGOS
+    layout_codigos = [
+        [sg.Text('Buscar por nombre de causa:'),sg.Input(size=(30, 1), key='-SEARCH-'), sg.Button('Buscar', key='-SEARCH-BUTTON-')],
+        [sg.Table(values=[[causa, codigo] for causa, codigo in codigos_causas.items()],
+                headings=['Causa Raíz del Paro de Línea', 'Código'],
+                auto_size_columns=False,
+                col_widths=[40, 10],
+                display_row_numbers=False,
+                justification='left',
+                num_rows=min(len(codigos_causas), 20),
+                key='-TABLE-')],
+        #[sg.Button('X', font='bold', key='-SIZEMIN-')],
+    ]
+
+    #layout para la busqueda (TABLA INFERIOR)
+    layout_busqueda = [
+        [sg.Text('Buscar por código de causa:'),sg.Input(key='BUSCAR_CODIGO', size=(10, 1)), sg.Button('Buscar')],
+        [sg.Table(
+            headings=['Fecha',"Linea",'Ensamble','Categoria', 'Subcategoria', 'Causa', 'Código', 'Tiempo','Hora de inicio', 'Hora de fin'],
+            values=[], 
+            key='TABLA_CAUSAS',
+            enable_events=True,
+            auto_size_columns=False,
+            col_widths=[10,5,10, 20,20, 30, 10, 10, 10, 10],
+            justification='left',
+            num_rows=10,
+            row_height=25,
+            alternating_row_color='lightblue',
+            display_row_numbers=False,
+            selected_row_colors='white on blue',
+            enable_click_events=True,
+        )],
+        [sg.Button("Desplegar gráfico")]
+    ]
+
+
+    #Layout completo (ENTRADA DE DATOS, TABLA DE CODIGOS, BUSQUEDA)
+    layout_full = [
+        [sg.Push(),sg.Column(layout_entrada_datos), sg.VSeperator(),sg.Column(layout_codigos),sg.Push(),],
+        [layout_busqueda]
+        ]
+
+    window = sg.Window('Registro de Causas', icon=r'TM_OEE\img\reloj.ico', layout=layout_full, resizable=True,finalize=True, element_justification='c')
+    window.maximize()
+        
+    causas_temporales = []
+    #*****************************************************************************************************
+    # ........................................... Majeo de eventos  .............................................
+    while True:
+        event, values = window.read()
+        
+        if event == sg.WINDOW_CLOSED or event == 'Cancelar':
+            # Si la ventana se cierra, activa el evento de parada para los hilos
+            stop_event.set()
+            break
+        
+        if event == 'CATEGORIA':
+            categoria_seleccionada = values['CATEGORIA']
+            subcategorias = categorias_primer_orden.get(categoria_seleccionada, [])
+            window['SUBCATEGORIA'].update(values=subcategorias, value='')
+            window['SUBCATEGORIA'].set_size((30, 5))
+            window['CAUSA'].update(values=[], value='')
+            window['CAUSA'].set_size((50, 6))
+            window['CODIGO'].update(value='', text_color='black', background_color='white')
+        
+        if event == 'SUBCATEGORIA':
+            subcategoria_seleccionada = values['SUBCATEGORIA']
+            causas = causas_por_subcategoria.get(subcategoria_seleccionada, [])
+            window['CAUSA'].update(values=causas, value='')
+            window['CAUSA'].set_size((50, 6))
+            window['CODIGO'].update(value='', text_color='black', background_color='white')
+        
+        if event == 'CAUSA':
+            causa_seleccionada = values['CAUSA']
+            codigo = codigos_causas.get(causa_seleccionada, 'Código no encontrado')
+            window['CODIGO'].update(value=codigo, text_color='blue', background_color='white')
+            
+        if event == 'Añadir Causa':
+            fecha = values['FECHA']
+            linea = values['LINEA']
+            ensamble = values['ENSAMBLE'].upper()
+            hora_inicio = values['HORA INICIO']
+            hora_final = values['HORA FINAL']
+            categoria = values['CATEGORIA']
+            subcategoria = values['SUBCATEGORIA']
+            causa = values['CAUSA']
+            codigo = values['CODIGO']
+            tiempo_str = values['TIEMPO']
+            
+            if not all([linea,ensamble, hora_inicio, hora_final, categoria, subcategoria, causa, tiempo_str]):
+                sg.popup('Por favor, complete todos los campos.', title='Error')
+                continue
+            
+            # si hora de inicio y final no tiene el formato correcto, mostrar un mensaje de error
+            if not re.match(r'\d{2}:\d{2}', hora_inicio) or not re.match(r'\d{2}:\d{2}', hora_final):
+                sg.popup('La hora de inicio y final deben tener el formato HH:MM.', title='Error')
+                continue
+            
+            try:
+                tiempo = int(tiempo_str)
+            except ValueError:
+                sg.popup('El tiempo debe ser un número entero.', title='Error')
+                continue
+            
+            causa_data = [fecha,linea,ensamble,categoria, subcategoria, causa, codigo, tiempo, hora_inicio, hora_final]
+            causas_temporales.append(causa_data)
+            window['TABLA_CAUSAS'].update(values=causas_temporales)
+            
+            # Limpiar campos para nueva entrada
+            window['CATEGORIA'].update(value='')
+            window['CATEGORIA'].set_size((30, 1))
+            window['SUBCATEGORIA'].update(values=[], value='')
+            window['SUBCATEGORIA'].set_size((30, 6))
+            window['CAUSA'].update(values=[], value='')
+            window['CAUSA'].set_size((50, 6))
+            window['CODIGO'].update(value='', text_color='black', background_color='white')
+            window['TIEMPO'].update(value='')
+        
+        if event == 'Guardar Todo':
+            if not causas_temporales:
+                sg.popup('No hay causas para guardar.', title='Error')
+                continue
+            todas_las_causas = list(codigos_causas.keys())
+            categorias = list(categorias_primer_orden.keys())
+            columnas = ['FECHA', 'LINEA','ENSAMBLE', 'CATEGORIA', 'SUBCATEGORIA', 'HORA INICIO', 'HORA FINAL','TIEMPO TOTAL'] + todas_las_causas + categorias
+            
+            
+            # Convertir las horas a formato AM/PM si están en formato de 24 horas
+            hora_inicio_filtrada = convertir_a_am_pm(hora_inicio)
+            if hora_inicio_filtrada is None:
+                sg.popup(f"No se pudo convertir la hora de inicio '{hora_inicio}'", title='Error')
+                break
+            
+            hora_final_filtrada = convertir_a_am_pm(hora_final)
+            if hora_final_filtrada is None:
+                sg.popup(f"No se pudo convertir la hora final '{hora_final}'", title='Error')
+                break
+            
+            # Crear un diccionario para almacenar la suma de tiempos por causa para cada fila
+            registros = []
+            for causa in causas_temporales:
+                fecha,linea,ensamble, categoria, subcategoria, causa_nombre, codigo, tiempo, hora_inicio_filtrada, hora_final_filtrada = causa
+                registro = {
+                    'FECHA': fecha,
+                    'LINEA': linea,
+                    'ENSAMBLE': ensamble,
+                    'CATEGORIA': categoria,
+                    'SUBCATEGORIA': subcategoria,
+                    'HORA INICIO': hora_inicio_filtrada,
+                    'HORA FINAL': hora_final_filtrada,
+                    **{col: 0 for col in todas_las_causas}
+                }
+                
+                #inicializar todas las columnas en de causa y categoria en 0
+                for col in columnas[7:]:
+                    registro[col] = 0
+                    
+                #asignar el tiempo a la columna y categoria en 0 por su llave en diccionario
+                causa_nombre = buscar_key_por_valor(codigos_causas, codigo)                   
+                #print(causa_nombre)
+                
+                if causa_nombre in registro:
+                    registro[causa_nombre] = tiempo
+                    
+                #asignar el tiempo a la columna de categoria correspondiente
+                if categoria in registro:
+                    registro[categoria] = tiempo
+                
+                # variable que almacena la suma de tiempo de todas las causas
+                tiempo_total = 0
+                for causa in todas_las_causas:
+                    if causa in registro:
+                        tiempo_total += registro[causa]
+                        
+                registro['TIEMPO TOTAL'] = tiempo_total
+                registros.append(registro)
+                
+            # Guardar los datos en un archivo CSV
+            nombre_archivo = r'H:\Publico\SMT-Prog-Status\DOWN TIME(Total navico)\TM_SMT_V3.csv'
+            #nombre_archivo_debug = r'C:\Users\CECHEVARRIAMENDOZA\OneDrive - Brunswick Corporation\Documents\Proyectos_Python\PysimpleGUI\Proyectos\TM_OEE\data\TM_SMT_V3.csv'
+            try:
+                with open(nombre_archivo, mode='a', newline='') as archivo_csv:  # Modificar modo a 'a'
+                    escritor_csv = csv.DictWriter(archivo_csv, fieldnames=columnas)
+                    if archivo_csv.tell() == 0:  # Verificar si el archivo está vacío
+                        escritor_csv.writeheader()  # Escribir encabezados solo si el archivo está vacío
+                    escritor_csv.writerows(registros)
+                sg.popup('Causas guardadas exitosamente.', title='Éxito')
+            except IOError as e:
+                sg.popup('Error al abrir el archivo CSV: ' + str(e), title='Error')
+            except Exception as e:
+                sg.popup('Error al escribir en el archivo CSV: ' + str(e), title='Error')
+                
+            causas_temporales = []
+            window['TABLA_CAUSAS'].update(values=[])
+        
+        if event == 'Buscar':
+            codigo_busqueda = values['BUSCAR_CODIGO']
+            codigo_busqueda = codigo_busqueda.upper()
+            try:
+                causa_encontrada = next(causa for causa, codigo in codigos_causas.items() if codigo == codigo_busqueda)
+                subcategoria = next((subcat for subcat, causas in causas_por_subcategoria.items() if causa_encontrada in causas), '')
+                categoria = next((cat for cat, subcategorias in categorias_primer_orden.items() if subcategoria in subcategorias), '')
+                
+                window['CATEGORIA'].update(value=categoria, disabled=False) #,text_color='blue', background_color='white')
+                window['SUBCATEGORIA'].update(value=subcategoria, disabled=False) #,text_color='blue', background_color='white')
+                window['CAUSA'].update(value=causa_encontrada, disabled=False)#text_color='blue', background_color='white')
+                window['CODIGO'].update(value=codigo_busqueda, disabled=True)#,text_color='blue', background_color='white')
+            except StopIteration:
+                sg.popup('Código no encontrado', title='Error')
+                
+        elif event == '-SEARCH-BUTTON-':
+            # convierte el texto recibido en minusculas
+            search_term = values['-SEARCH-'].strip().lower()
+            filtered_rows = [[causa, codigo] for causa, codigo in codigos_causas.items() if search_term in causa.lower()]
+            window['-TABLE-'].update(values=filtered_rows)
+        
+        if event == "Desplegar gráfico":
+            #sg.popup('En construccion', title='Generar gráfico')
+            # Crear un hilo para la aplicación Dash
+            dash_thread = threading.Thread(target=run_dash_app,daemon=True)
+            # Iniciar el hilo
+            dash_thread.start()
+            
+            navegador = threading.Thread(target=lanzar_navegador,daemon=True)
+            navegador.start()
+
+    # Cierra la ventana de PySimpleGUI
+    window.close()
+    
+if __name__ == '__main__':
+    hilo_principal = threading.Thread(target=main)
+    hilo_principal.start()
+
