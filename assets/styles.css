@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #2bb8e0;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(14, 114, 28);
+}

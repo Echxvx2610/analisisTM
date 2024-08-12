@@ -1,0 +1,1195 @@
+2024-07-02 12:57:19,688 - INFO - Iniciando el dashboard. Hora actual: 12:57:19, fecha actual: 02/07/2024
+2024-07-02 12:57:19,708 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:00:44,036 - INFO - Iniciando el dashboard. Hora actual: 13:00:44, fecha actual: 02/07/2024
+2024-07-02 13:00:44,055 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:00:44,086 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-02 13:00:44,086 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-02 13:00:44,761 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:44] "GET / HTTP/1.1" 200 -
+2024-07-02 13:00:44,973 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:44] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-02 13:00:44,979 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:44] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:00:44,999 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:44] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,004 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,007 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,017 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,027 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,032 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,052 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,057 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,242 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:00:45,243 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:00:45,273 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 13:00:45,310 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,312 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,326 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,333 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-02 13:00:45,356 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:45,358 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:00:45,362 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:00:45,369 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:00:45,371 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-02 13:00:45,689 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:45,708 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:45,716 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:45,978 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:45,988 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:46,005 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:46,880 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:47,328 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:00:48,334 - INFO - 127.0.0.1 - - [02/Jul/2024 13:00:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:01:03,211 - INFO - Iniciando el dashboard. Hora actual: 13:01:03, fecha actual: 02/07/2024
+2024-07-02 13:01:03,226 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:01:05,453 - INFO - Iniciando el dashboard. Hora actual: 13:01:05, fecha actual: 02/07/2024
+2024-07-02 13:01:06,116 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:01:06,118 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:01:06,122 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:01:07,009 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:01:07,011 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:01:07,015 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:01:29,407 - INFO - Iniciando el dashboard. Hora actual: 13:01:29, fecha actual: 02/07/2024
+2024-07-02 13:01:29,425 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:02:29,761 - INFO - Iniciando el dashboard. Hora actual: 13:02:29, fecha actual: 02/07/2024
+2024-07-02 13:02:29,779 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:02:29,810 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-02 13:02:29,810 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-02 13:02:30,529 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET / HTTP/1.1" 200 -
+2024-07-02 13:02:30,921 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-02 13:02:30,929 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,931 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,941 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,950 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,952 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,972 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,984 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,985 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-02 13:02:30,992 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:30] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-02 13:02:31,255 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:02:31,259 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:02:31,310 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 13:02:31,345 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-02 13:02:31,345 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-02 13:02:31,355 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-02 13:02:31,371 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-02 13:02:31,397 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-02 13:02:31,409 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:31,472 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:02:31,479 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:02:31,527 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:02:31,976 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:31,990 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:31,996 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:32,203 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:32,212 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:32,217 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:33,272 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:33,357 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:34,318 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:35,324 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:36,324 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:36,377 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:02:36,383 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:02:36,388 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:36,392 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:36,394 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:02:36,402 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:36,407 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:36,441 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:36,444 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:37,258 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:37,269 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:37,270 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:37,271 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:37,273 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:37,280 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:37,285 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:37,313 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:37,321 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:37,355 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:38,334 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:39,332 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:40,194 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:40,199 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:40,202 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:40,210 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:40,211 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:40,239 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:40,242 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:40,248 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:40,254 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:40,531 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:41,322 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:42,323 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:43,335 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:43,782 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:43,786 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:43,789 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:43,793 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:02:43,798 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:43,805 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:43,814 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:43,830 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:43,852 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:44,331 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:45,328 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:46,328 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:46,805 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:46,808 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:46,814 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:46,817 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:46,820 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:46,847 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:46,856 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:46,862 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:46,876 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:47,322 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:48,330 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:49,334 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:49,414 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:49,419 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:49,431 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:49,436 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:49,490 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:49,498 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:49,522 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:49,535 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:49,543 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:50,328 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:51,323 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:52,333 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:52,966 - DEBUG - Actualizar subcategoría detalle: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:52,976 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:53,330 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:54,324 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:55,324 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:56,321 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:57,061 - DEBUG - Actualizar gráfico detalle para fecha: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:57,086 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:57,330 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:57,612 - DEBUG - Actualizar gráfico detalle para fecha: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:57,642 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:58,323 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:59,326 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:02:59,973 - DEBUG - Actualizar gráfico detalle causas en una fecha: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:02:59,980 - INFO - 127.0.0.1 - - [02/Jul/2024 13:02:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:00,334 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:01,321 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:02,321 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:03,320 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:04,323 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:05,321 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:06,327 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:07,325 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:08,323 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:09,321 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:10,322 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:49,786 - INFO - Iniciando el dashboard. Hora actual: 13:03:49, fecha actual: 02/07/2024
+2024-07-02 13:03:49,804 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:03:49,846 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-02 13:03:49,846 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-02 13:03:52,255 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET / HTTP/1.1" 200 -
+2024-07-02 13:03:52,615 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-02 13:03:52,621 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,664 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,696 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,758 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,768 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,782 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,798 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,829 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-02 13:03:52,858 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:52] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-02 13:03:53,205 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:03:53,208 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:03:53,243 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-02 13:03:53,245 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-02 13:03:53,253 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-02 13:03:53,272 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:53,276 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:03:53,278 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-02 13:03:53,289 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:03:53,297 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:03:53,305 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-02 13:03:53,402 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 13:03:53,633 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:53,649 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:53,656 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:54,788 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:54,796 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:54,801 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:54,805 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:55,253 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:56,250 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:57,103 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:03:57,107 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:03:57,110 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:57,111 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:03:57,118 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:57,123 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:57,151 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:57,155 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:57,164 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:57,511 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:58,267 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:58,298 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:03:58,302 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:03:58,305 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:58,305 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:03:58,314 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:58,317 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:58,338 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:58,343 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:58,346 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:03:59,255 - INFO - 127.0.0.1 - - [02/Jul/2024 13:03:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:04:00,261 - INFO - 127.0.0.1 - - [02/Jul/2024 13:04:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:04:01,257 - INFO - 127.0.0.1 - - [02/Jul/2024 13:04:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:04:02,259 - INFO - 127.0.0.1 - - [02/Jul/2024 13:04:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:04:03,270 - INFO - 127.0.0.1 - - [02/Jul/2024 13:04:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:04:04,269 - INFO - 127.0.0.1 - - [02/Jul/2024 13:04:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:44,829 - INFO - Iniciando el dashboard. Hora actual: 13:11:44, fecha actual: 02/07/2024
+2024-07-02 13:11:44,847 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:11:44,887 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-02 13:11:44,888 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-02 13:11:48,284 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET / HTTP/1.1" 200 -
+2024-07-02 13:11:48,582 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-02 13:11:48,604 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,620 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,637 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,641 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,651 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,667 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,672 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,681 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-02 13:11:48,688 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:48] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-02 13:11:49,384 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:11:49,388 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:11:49,443 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-02 13:11:49,444 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-02 13:11:49,472 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:49,474 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-02 13:11:49,477 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:11:49,478 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-02 13:11:49,495 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:11:49,498 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:11:49,570 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-02 13:11:49,686 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 13:11:49,895 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:49,903 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:49,907 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:50,052 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:50,060 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:50,065 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:50,998 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:51,450 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:52,448 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:53,437 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:11:53,444 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:11:53,449 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:53,453 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:53,454 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:11:53,464 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:53,497 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:53,499 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:53,502 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:53,506 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:54,452 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:55,115 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:11:55,117 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:11:55,119 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:55,119 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:11:55,120 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:55,122 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:55,130 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:55,139 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:55,168 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:55,452 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:56,462 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:57,155 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:11:57,161 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:11:57,167 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:57,168 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:57,170 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:11:57,175 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:57,201 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:57,205 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:57,215 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:57,478 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:58,458 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:59,209 - DEBUG - Actualizar gráfico: linea=all, categoria=subcategorías, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:11:59,214 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:11:59,452 - INFO - 127.0.0.1 - - [02/Jul/2024 13:11:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,109 - DEBUG - Actualizar gráfico: linea=all, categoria=subcategorías, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:00,113 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:00,114 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:00,118 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,120 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,123 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,127 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,134 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,164 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,453 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:00,774 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:00,780 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:01,463 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:02,451 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:03,155 - DEBUG - Actualizar gráfico: linea=5, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:03,166 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:03,167 - DEBUG - Actualizar gráfico apilado: linea=5, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:03,168 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:03,171 - DEBUG - Actualizar gráfico tedencia diaria: linea=5, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:03,210 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:03,213 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:03,215 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:03,221 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:03,459 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:04,451 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:04,896 - DEBUG - Actualizar gráfico: linea=4, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:04,902 - DEBUG - Actualizar gráfico apilado: linea=4, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:04,906 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:04,930 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:04,935 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:04,936 - DEBUG - Actualizar gráfico tedencia diaria: linea=4, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:04,942 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:04,947 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:04,952 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:05,454 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:06,456 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:06,806 - DEBUG - Actualizar gráfico: linea=3, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:06,813 - DEBUG - Actualizar gráfico apilado: linea=3, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:06,817 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:06,819 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:06,820 - DEBUG - Actualizar gráfico tedencia diaria: linea=3, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:06,826 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:06,852 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:06,855 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:06,867 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:07,451 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:08,461 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:08,671 - DEBUG - Actualizar gráfico: linea=2, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:08,677 - DEBUG - Actualizar gráfico apilado: linea=2, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:08,681 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:08,684 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:08,686 - DEBUG - Actualizar gráfico tedencia diaria: linea=2, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:08,716 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:08,724 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:08,732 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:08,738 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:09,453 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:10,185 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:10,190 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:10,191 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:12:10,194 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:10,196 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:10,199 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:10,201 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:10,208 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:10,270 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:10,557 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:11,453 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:12,450 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:13,465 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:14,455 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:15,458 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:16,458 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:17,467 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:18,463 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:18,996 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:18] "GET /shutdowm HTTP/1.1" 200 -
+2024-07-02 13:12:19,008 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "[36mGET /assets/styles.css?m=1719515626.0302908 HTTP/1.1[0m" 304 -
+2024-07-02 13:12:19,157 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:12:19,158 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:12:19,180 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2024-07-02 13:12:19,185 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "[36mGET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:19,187 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:19,190 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:19,205 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:19,210 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:12:19,212 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:12:19,216 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:19,219 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:12:19,258 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:19,269 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:19,289 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:19,605 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:19,611 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:19,619 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:20,715 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:21,193 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:22,194 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:23,194 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:24,222 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:25,195 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:26,226 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:27,209 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:28,192 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:29,197 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:30,192 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:31,193 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:32,205 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:33,208 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:34,199 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,197 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,564 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "GET /shutdown HTTP/1.1" 200 -
+2024-07-02 13:12:35,573 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "[36mGET /assets/styles.css?m=1719515626.0302908 HTTP/1.1[0m" 304 -
+2024-07-02 13:12:35,637 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:12:35,642 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:12:35,681 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2024-07-02 13:12:35,688 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "[36mGET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:35,688 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:35,692 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:35,708 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,720 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:12:35,724 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2024-07-02 13:12:35,735 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:12:35,743 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:12:35,815 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,837 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,865 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,975 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,980 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:35,983 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:36,739 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:37,712 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:38,697 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:39,706 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:40,709 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:41,701 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:42,707 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:43,699 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:44,709 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:45,715 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:46,707 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:47,703 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:48,712 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:49,703 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:50,703 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:51,712 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:52,713 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:53,700 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:54,706 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:55,705 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:56,713 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:57,704 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:58,711 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:12:59,713 - INFO - 127.0.0.1 - - [02/Jul/2024 13:12:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:00,709 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:01,703 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:02,712 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:03,712 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:04,713 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:05,714 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:06,698 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:07,702 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:08,697 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:09,702 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:10,698 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:11,699 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:12,708 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:13,699 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:14,697 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:15,702 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:16,712 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:17,706 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:18,699 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:19,705 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:20,699 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:20,865 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "GET /shutdown HTTP/1.1" 200 -
+2024-07-02 13:13:20,879 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "[36mGET /assets/styles.css?m=1719515626.0302908 HTTP/1.1[0m" 304 -
+2024-07-02 13:13:20,942 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:13:20,948 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:13:20,956 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 13:13:20,971 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2024-07-02 13:13:20,975 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "[36mGET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1[0m" 304 -
+2024-07-02 13:13:20,976 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+2024-07-02 13:13:20,979 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:20] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2024-07-02 13:13:21,006 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:21,011 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:13:21,013 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2024-07-02 13:13:21,017 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:13:21,025 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:13:21,051 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:21,082 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:21,105 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:21,369 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:21,373 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:21,376 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:22,186 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:22,981 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:23,993 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:24,985 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:25,985 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:26,778 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-04-24, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:13:26,784 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-04-24, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:13:26,785 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-04-24, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:13:26,787 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:26,790 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:26,802 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:26,806 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:26,850 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:26,859 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:27,197 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:27,983 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:28,057 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-04-24, end_date=2024-05-15, unidad=minutos
+2024-07-02 13:13:28,063 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-04-24, end_date=2024-05-15, unidad=minutos
+2024-07-02 13:13:28,065 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:28,069 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:28,070 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-04-24, end_date=2024-05-15, unidad=minutos
+2024-07-02 13:13:28,097 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:28,099 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:28,104 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:28,107 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:28,987 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:29,983 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:30,988 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:31,984 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:32,985 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:33,374 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-06-03, end_date=2024-05-15, unidad=minutos
+2024-07-02 13:13:33,384 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:33,384 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-06-03, end_date=2024-05-15, unidad=minutos
+2024-07-02 13:13:33,385 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:33,386 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-06-03, end_date=2024-05-15, unidad=minutos
+2024-07-02 13:13:33,410 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:33,414 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:33,417 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:33,428 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:33,991 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:34,232 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-06-03, end_date=2024-06-07, unidad=minutos
+2024-07-02 13:13:34,236 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-06-03, end_date=2024-06-07, unidad=minutos
+2024-07-02 13:13:34,237 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-06-03, end_date=2024-06-07, unidad=minutos
+2024-07-02 13:13:34,239 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:34,242 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:34,248 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:34,256 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:34,269 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:34,290 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:34,994 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:13:35,986 - INFO - 127.0.0.1 - - [02/Jul/2024 13:13:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:17:36,267 - INFO - Iniciando el dashboard. Hora actual: 13:17:36, fecha actual: 02/07/2024
+2024-07-02 13:17:36,286 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:17:37,969 - INFO - Iniciando el dashboard. Hora actual: 13:17:37, fecha actual: 02/07/2024
+2024-07-02 13:17:43,977 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:17:43,981 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:17:43,987 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:18:02,079 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:18:02,082 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:18:02,088 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:18:05,060 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-08-01, unidad=minutos
+2024-07-02 13:18:05,064 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-08-01, unidad=minutos
+2024-07-02 13:18:05,072 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-08-01, unidad=minutos
+2024-07-02 13:18:12,790 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:18:12,794 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:18:12,803 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:18:22,344 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:18:22,349 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:18:22,358 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 13:18:25,760 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:18:25,765 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:18:25,775 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=horas
+2024-07-02 13:35:44,496 - INFO - Iniciando el dashboard. Hora actual: 13:35:44, fecha actual: 02/07/2024
+2024-07-02 13:35:44,517 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 13:35:44,550 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-02 13:35:44,550 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-02 13:35:45,356 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET / HTTP/1.1" 200 -
+2024-07-02 13:35:45,624 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,624 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-02 13:35:45,638 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,667 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,672 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,673 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,704 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,718 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,723 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-02 13:35:45,725 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:45] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-02 13:35:46,057 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 13:35:46,060 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 13:35:46,107 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-02 13:35:46,108 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-02 13:35:46,118 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-02 13:35:46,122 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-02 13:35:46,152 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:46,160 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:35:46,162 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:35:46,169 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 13:35:46,191 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-02 13:35:46,266 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 13:35:46,497 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:46,503 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:46,506 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:46,654 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:46,660 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:46,664 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:47,522 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:48,123 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:49,126 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:50,137 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:51,135 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:52,128 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:53,136 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:54,133 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:55,134 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:56,126 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:57,129 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:58,128 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:35:59,127 - INFO - 127.0.0.1 - - [02/Jul/2024 13:35:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:00,134 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:01,133 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:02,137 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:03,137 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:04,136 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:05,128 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:06,134 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:07,138 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:08,135 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:09,127 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:10,127 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:11,129 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:12,136 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:13,124 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:14,127 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:15,128 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:16,132 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:17,130 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:18,127 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 13:36:19,126 - INFO - 127.0.0.1 - - [02/Jul/2024 13:36:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:03,909 - INFO - Iniciando el dashboard. Hora actual: 14:04:03, fecha actual: 02/07/2024
+2024-07-02 14:04:03,932 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 14:04:03,971 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-02 14:04:03,972 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-02 14:04:05,122 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET / HTTP/1.1" 200 -
+2024-07-02 14:04:05,584 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-02 14:04:05,589 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,595 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,599 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,610 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,614 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,635 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,637 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,650 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-02 14:04:05,654 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:05] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-02 14:04:06,259 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 14:04:06,262 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 14:04:06,287 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 14:04:06,323 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-02 14:04:06,327 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-02 14:04:06,333 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-02 14:04:06,345 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-02 14:04:06,360 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:06,373 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:06,385 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:06,390 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:06,396 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:06] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-02 14:04:07,207 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:07,219 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:07,227 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:07,554 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:07,566 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:07,571 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:07,714 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:08,886 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:09,333 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:10,336 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:11,334 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:12,333 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:13,179 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:13,183 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:13,186 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:13,193 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:13,199 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:13,202 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:13,224 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:13,230 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:13,243 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:13,576 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:14,035 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:14,035 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:14,036 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-01, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:14,039 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:14,041 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:14,043 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:14,071 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:14,079 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:14,091 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:14,345 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:15,342 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:16,200 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:16,205 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:16,215 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:16,217 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:16,219 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:16,242 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:16,247 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:16,253 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:16,265 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:16,546 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:17,337 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:18,332 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:19,333 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:19,807 - DEBUG - Actualizar gráfico detalle para fecha: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:19,829 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:20,333 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:21,337 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:21,548 - DEBUG - Actualizar gráfico detalle causas en una fecha: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:21,555 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:22,348 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:22,653 - DEBUG - Actualizar gráfico detalle causas en una fecha: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:22,661 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:23,003 - DEBUG - Actualizar gráfico detalle causas en una fecha: linea=all, start_date=2024-07-02, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:23,010 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:23,339 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:24,337 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:25,344 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:26,336 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:28,368 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:28,375 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:30,381 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:30,389 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:32,373 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:32,378 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:34,372 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:34,377 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:36,377 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:36,381 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:38,366 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:38,370 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:40,369 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:40,374 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:42,210 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:42,335 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:43,338 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:44,341 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:45,253 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "GET / HTTP/1.1" 200 -
+2024-07-02 14:04:45,267 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "[36mGET /assets/styles.css?m=1719515626.0302908 HTTP/1.1[0m" 304 -
+2024-07-02 14:04:45,396 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 14:04:45,398 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 14:04:45,401 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 14:04:45,411 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2024-07-02 14:04:45,414 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "[36mGET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1[0m" 304 -
+2024-07-02 14:04:45,415 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+2024-07-02 14:04:45,420 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2024-07-02 14:04:45,432 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:45,434 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:45,435 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:45,436 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2024-07-02 14:04:45,441 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/02/2024, unidad=minutos
+2024-07-02 14:04:45,475 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:45,498 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:45,530 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:45,745 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:45,795 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:45,799 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:46,540 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:47,421 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:48,431 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:49,038 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:49,043 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:49,049 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:49,051 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=2024-07-02, unidad=minutos
+2024-07-02 14:04:49,056 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:49,063 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:49,072 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:49,100 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:49,113 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:49,438 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:50,428 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:51,429 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:52,426 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:52,735 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:52,740 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:52,742 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:52,743 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:52,755 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:52,761 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:52,784 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:52,787 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:52,805 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:53,428 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:54,433 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:55,429 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:56,071 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:56,078 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:56,082 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:56,083 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:56,085 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:56,106 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:56,107 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:56,111 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:56,122 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:56,533 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:57,424 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:58,428 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:59,177 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-03, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:59,182 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-03, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:59,184 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-03, end_date=2024-07-03, unidad=minutos
+2024-07-02 14:04:59,188 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:59,190 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:59,195 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:59,214 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:59,216 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:59,225 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:04:59,430 - INFO - 127.0.0.1 - - [02/Jul/2024 14:04:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:00,426 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:03,148 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:03,426 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:13,944 - INFO - Iniciando el dashboard. Hora actual: 14:05:13, fecha actual: 02/07/2024
+2024-07-02 14:05:13,962 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-02 14:05:13,992 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-02 14:05:13,992 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-02 14:05:14,815 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:14] "GET / HTTP/1.1" 200 -
+2024-07-02 14:05:15,102 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,103 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-02 14:05:15,110 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,111 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,119 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,127 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,203 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,204 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,205 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,205 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,476 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-02 14:05:15,477 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-02 14:05:15,517 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,519 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,539 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,567 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-02 14:05:15,570 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-02 14:05:15,583 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:15,592 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:15,640 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:15,670 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:15,737 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:15] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-02 14:05:16,010 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:16,015 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:16,024 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:16,195 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:16,203 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:16,209 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:17,259 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:17,530 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:18,534 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:19,536 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:20,165 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:20,171 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:20,179 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:20,181 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:20,188 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:20,211 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:20,214 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:20,221 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:20,229 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:20,624 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:21,545 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:22,538 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:23,535 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:23,767 - DEBUG - Actualizar gráfico: linea=5, categoria=causas, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:23,777 - DEBUG - Actualizar gráfico apilado: linea=5, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:23,783 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:23,803 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:23,814 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:23,816 - DEBUG - Actualizar gráfico tedencia diaria: linea=5, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-02 14:05:23,820 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:23,826 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:23,835 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:24,536 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:24,949 - DEBUG - Actualizar gráfico: linea=5, categoria=causas, start_date=2024-07-02, end_date=07/03/2024, unidad=horas
+2024-07-02 14:05:24,954 - DEBUG - Actualizar gráfico apilado: linea=5, start_date=2024-07-02, end_date=07/03/2024, unidad=horas
+2024-07-02 14:05:24,958 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:24,982 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:24,988 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:24,990 - DEBUG - Actualizar gráfico tedencia diaria: linea=5, start_date=2024-07-02, end_date=07/03/2024, unidad=horas
+2024-07-02 14:05:24,996 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:25,001 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:25,008 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:25,549 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:26,549 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:27,547 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:28,540 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:29,545 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:29,555 - DEBUG - Actualizar subcategoría detalle: linea=5, start_date=2024-07-02, end_date=07/03/2024, unidad=horas
+2024-07-02 14:05:29,563 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:30,543 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:30,917 - DEBUG - Actualizar gráfico detalle para fecha: linea=5, start_date=2024-07-02, end_date=07/03/2024, unidad=horas
+2024-07-02 14:05:30,945 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:31,539 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:32,535 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:32,779 - DEBUG - Actualizar gráfico detalle causas en una fecha: linea=5, start_date=2024-07-02, end_date=07/03/2024, unidad=horas
+2024-07-02 14:05:32,787 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:33,535 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:34,543 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:35,542 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-02 14:05:36,543 - INFO - 127.0.0.1 - - [02/Jul/2024 14:05:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:42,821 - INFO - Iniciando el dashboard. Hora actual: 11:14:42, fecha actual: 03/07/2024
+2024-07-03 11:14:42,842 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-03 11:14:42,880 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-03 11:14:42,880 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-03 11:14:50,707 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:50] "GET / HTTP/1.1" 200 -
+2024-07-03 11:14:51,535 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-03 11:14:51,547 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,584 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,585 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,586 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,586 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,587 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,593 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,627 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-03 11:14:51,630 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:51] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-03 11:14:52,221 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-03 11:14:52,228 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-03 11:14:52,335 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-03 11:14:52,345 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-03 11:14:52,468 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-03 11:14:52,500 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-03 11:14:52,503 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-03 11:14:52,541 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:52,560 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:14:52,591 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:14:52,607 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:14:52,642 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-03 11:14:52,949 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:52,954 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:52,958 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:53,063 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:53,076 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:53,148 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:54,511 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:55,471 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:56,480 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:57,341 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:14:57,344 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:14:57,351 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:57,355 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:57,357 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:14:57,374 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:57,400 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:57,410 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:57,433 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:57,771 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:58,487 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:14:59,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:14:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:00,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:01,476 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:02,092 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:02,097 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:02,097 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-02, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:02,099 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:02,104 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:02,110 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:02,134 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:02,139 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:02,143 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:02,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:03,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:04,489 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:05,473 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:06,025 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:06,030 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:06,035 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:06,038 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:06,041 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:06,071 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:06,073 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:06,080 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:06,086 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:06,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:07,487 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:08,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:09,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:10,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:11,472 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:12,490 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:13,485 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:14,484 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:15,483 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:16,477 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:17,491 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:18,480 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:19,479 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:20,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:21,487 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:22,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:23,481 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:24,480 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:25,482 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:26,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:27,483 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:28,486 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:29,478 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:30,487 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:31,476 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:32,479 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:33,480 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:34,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:35,487 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:36,480 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:37,478 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:38,479 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:39,473 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:40,478 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:41,477 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:42,486 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:43,479 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:44,486 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:45,480 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:46,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:47,478 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:48,478 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:49,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:50,475 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:50,686 - DEBUG - Actualizar gráfico detalle para fecha: linea=all, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:50,708 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:51,473 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:52,479 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:53,455 - DEBUG - Actualizar gráfico detalle causas en una fecha: linea=all, start_date=2024-07-03, end_date=07/03/2024, unidad=minutos
+2024-07-03 11:15:53,465 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:53,501 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:54,474 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:55,479 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:56,476 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:57,489 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 11:15:58,485 - INFO - 127.0.0.1 - - [03/Jul/2024 11:15:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:05,544 - INFO - Iniciando el dashboard. Hora actual: 12:05:05, fecha actual: 03/07/2024
+2024-07-03 12:05:05,569 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-03 12:05:05,604 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-03 12:05:05,604 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-03 12:05:06,445 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:06] "GET / HTTP/1.1" 200 -
+2024-07-03 12:05:07,150 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-03 12:05:07,152 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,161 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,162 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,163 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,170 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,186 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,188 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,190 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,194 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,586 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-03 12:05:07,592 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-03 12:05:07,630 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-03 12:05:07,664 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,665 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,670 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,711 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-03 12:05:07,751 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-03 12:05:07,872 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:07,880 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-03 12:05:07,901 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-03 12:05:07,915 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/03/2024, unidad=minutos
+2024-07-03 12:05:08,354 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:08,360 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:08,363 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:08,387 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:08,394 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:08,400 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:09,462 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:10,414 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:11,409 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:13,402 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:13,409 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:15,410 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:15,416 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:17,408 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:17,413 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:19,400 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:19,405 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:21,405 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:21,411 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:23,409 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:23,414 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:25,406 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:25,412 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:27,411 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:27,415 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:29,412 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:29,418 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:31,410 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:31,416 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:33,410 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:33,419 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:34,889 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:34,903 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:35,677 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:36,693 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:37,685 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:40,408 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:40,415 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:42,413 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:42,418 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:44,404 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:44,411 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:46,408 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:46,413 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:48,401 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:48,420 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:50,407 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:50,413 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:51,754 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:51,775 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:52,682 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:53,678 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:54,693 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:55,681 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:56,693 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:57,689 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:05:58,679 - INFO - 127.0.0.1 - - [03/Jul/2024 12:05:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:06:01,400 - INFO - 127.0.0.1 - - [03/Jul/2024 12:06:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-03 12:06:01,404 - INFO - 127.0.0.1 - - [03/Jul/2024 12:06:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:23,832 - INFO - Iniciando el dashboard. Hora actual: 12:12:23, fecha actual: 12/07/2024
+2024-07-12 12:12:23,864 - INFO - Dash is running on http://127.0.0.1:8000/
+
+2024-07-12 12:12:23,912 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-07-12 12:12:23,913 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-12 12:12:24,909 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:24] "GET / HTTP/1.1" 200 -
+2024-07-12 12:12:25,235 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /assets/styles.css?m=1719515626.0302908 HTTP/1.1" 200 -
+2024-07-12 12:12:25,255 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_17_1m1718395920.12.1.min.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,274 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/deps/react@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,286 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_17_1m1718395920.14.0.min.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,293 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_17_1m1718395920.8.1.min.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,322 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_17_1m1718395919.min.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,341 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,342 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_14_1m1718395920.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,468 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_18m1718395920.min.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,500 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_11m1718395919.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,815 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-layout HTTP/1.1" 200 -
+2024-07-12 12:12:25,826 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-dependencies HTTP/1.1" 200 -
+2024-07-12 12:12:25,839 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_favicon.ico?v=2.17.1 HTTP/1.1" 200 -
+2024-07-12 12:12:25,903 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/dcc/async-datepicker.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,909 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,926 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2024-07-12 12:12:25,958 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:25,974 - DEBUG - Actualizar gráfico: linea=all, categoria=causas, start_date=05/21/2024, end_date=07/11/2024, unidad=minutos
+2024-07-12 12:12:25,979 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:25] "GET /assets/logo.png HTTP/1.1" 200 -
+2024-07-12 12:12:25,987 - DEBUG - Actualizar gráfico apilado: linea=all, start_date=05/21/2024, end_date=07/11/2024, unidad=minutos
+2024-07-12 12:12:26,018 - DEBUG - Actualizar gráfico tedencia diaria: linea=all, start_date=05/21/2024, end_date=07/11/2024, unidad=minutos
+2024-07-12 12:12:26,038 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:26] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2024-07-12 12:12:26,552 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:26,560 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:26,565 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:26,889 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:26,903 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:26,908 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:28,188 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:28,899 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:29,883 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:30,885 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:33,136 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:33,144 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:35,131 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2024-07-12 12:12:35,142 - INFO - 127.0.0.1 - - [12/Jul/2024 12:12:35] "POST /_dash-update-component HTTP/1.1" 200 -

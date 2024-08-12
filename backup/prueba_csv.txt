@@ -1,0 +1,78 @@
+import csv
+import PySimpleGUI as sg
+
+# Suponiendo que codigos_causas es un diccionario que mapea códigos a nombres de causas.
+# Ejemplo: {'TPM:E2': 'TPM', 'REEMPLAZO1': 'REEMPLAZO DE PARTES DAÑADAS', ...}
+codigos_causas = {
+    'TPM:E2': 'TPM',
+    'REEMPLAZO1': 'REEMPLAZO DE PARTES DAÑADAS',
+    # Agrega todos los códigos y sus nombres correspondientes aquí.
+}
+
+# Suponiendo que categorias_primer_orden es un diccionario de categorías.
+# Ejemplo: {'INGENIERÍA': 'INGENIERÍA', 'MATERIALES': 'MATERIALES', ...}
+categorias_primer_orden = {
+    'INGENIERÍA': 'INGENIERÍA',
+    'MATERIALES': 'MATERIALES',
+    # Agrega todas las categorías aquí.
+}
+
+causas_temporales = [
+    # Ejemplo de datos temporales
+    ('5/20/2024', '25025-1A', 'INGENIERÍA', 'MANTENIMIENTO CORRECTIVO', 'REEMPLAZO DE PARTES DAÑADAS', 'REEMPLAZO1', 6, '4:00', '5:00'),
+    # Agrega más registros de ejemplo si es necesario
+]
+
+# Simulación del evento 'Guardar Todo'
+event = 'Guardar Todo'
+
+if event == 'Guardar Todo':
+    if not causas_temporales:
+        sg.popup('No hay causas para guardar.', title='Error')
+    else:
+        # Crear la lista de columnas necesarias
+        columnas_causas = list(codigos_causas.values())
+        columnas_categorias = list(categorias_primer_orden.keys())
+        columnas = ['FECHA', 'ENSAMBLE', 'CATEGORIA', 'SUBCATEGORIA', 'HORA INICIO', 'HORA FINAL'] + columnas_causas + columnas_categorias
+
+        # Crear un registro de las causas temporales
+        registros = []
+        for causa_data in causas_temporales:
+            fecha, ensamble, categoria, subcategoria, causa, codigo, tiempo, hora_inicio, hora_final = causa_data
+            registro = {
+                'FECHA': fecha,
+                'ENSAMBLE': ensamble,
+                'CATEGORIA': categoria,
+                'SUBCATEGORIA': subcategoria,
+                'HORA INICIO': hora_inicio,
+                'HORA FINAL': hora_final,
+            }
+
+            # Inicializar todas las columnas de causa y categoría en 0
+            for col in columnas[6:]:  # Saltar las primeras 6 columnas fijas
+                registro[col] = 0
+
+            # Asignar el tiempo a la columna de la causa correspondiente
+            causa_nombre = codigos_causas.get(codigo)
+            if causa_nombre:
+                registro[causa_nombre] = tiempo
+
+            # Asignar el tiempo a la columna de categoría correspondiente
+            if categoria in registro:
+                registro[categoria] += tiempo
+            else:
+                registro[categoria] = tiempo
+
+            registros.append(registro)
+
+        # Guardar los registros en el archivo CSV
+        with open(r'TM_OEE\causas_registradas.csv', mode='w', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=columnas)
+            writer.writeheader()
+            writer.writerows(registros)
+
+        sg.popup('Causas guardadas exitosamente.', title='Éxito')
+        causas_temporales = []
+        # Aquí debe haber código que actualice la tabla en la GUI, como window['TABLA_CAUSAS'].update(values=[])
+
+# Este bloque es una representación simplificada del flujo de tu aplicación.

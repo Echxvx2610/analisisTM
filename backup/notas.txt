@@ -1,0 +1,7 @@
+el directorio  compartido para los operadores
+
+"H:\Publico\SMT-Prog-Status\DOWN TIME(Total navico)\Oee_GUI_1.1.exe"
+captura informacion en archivo "OEE.csv" en el mismo directorio
+
+"H:\Publico\SMT-Prog-Status\DOWN TIME(Total navico)\TM_gui_1.0.exe"
+captura informacion en archivo "TM_SMT.csv" en el mismo directorio
